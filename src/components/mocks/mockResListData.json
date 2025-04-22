@@ -1,0 +1,398 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+                        "collectionId": "83639",
+                        "title": "Biryani",
+                        "description": "Taste these delectable classics, delectable biryanis to make your day.",
+                        "imageId": "COLLECTIONS/IMAGES/MERCH/2025/3/7/6b765643-8f10-4176-b1f4-5e096d4182c0_biryani nv (3) (1).png",
+                        "aspectRatio": "3.44",
+                        "cta": {
+                            "link": "swiggy://collectionV2?collection_id=83639&tags=layout_CCS_Biryani,biryani,ads_pc_biryani",
+                            "type": "collectionv2"
+                        },
+                        "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+                        "count": "2 restaurants"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+                        "sortConfigs": [
+                            {
+                                "key": "relevance",
+                                "title": "Relevance (Default)",
+                                "selected": true,
+                                "defaultSelection": true
+                            },
+                            {
+                                "key": "deliveryTimeAsc",
+                                "title": "Delivery Time"
+                            },
+                            {
+                                "key": "modelBasedRatingDesc",
+                                "title": "Rating"
+                            },
+                            {
+                                "key": "costForTwoAsc",
+                                "title": "Cost: Low to High"
+                            },
+                            {
+                                "key": "costForTwoDesc",
+                                "title": "Cost: High to Low"
+                            }
+                        ],
+                        "restaurantCount": 2,
+                        "facetList": [
+                            {
+                                "label": "Veg/Non-Veg",
+                                "id": "isVeg",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Non Veg",
+                                        "id": "isVegfacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Ratings",
+                                "id": "rating",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Ratings",
+                                        "id": "ratingfacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Ratings 4.0+",
+                                        "id": "ratingfacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Ratings 4.5+",
+                                        "id": "ratingfacetquery2",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Delivery Time",
+                                "id": "deliveryTime",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Less than 30 mins",
+                                        "id": "deliveryTimefacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    },
+                                    {
+                                        "label": "Less than 45 mins",
+                                        "id": "deliveryTimefacetquery1",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            },
+                            {
+                                "label": "Cost For Two",
+                                "id": "costForTwo",
+                                "selection": "SELECT_TYPE_MULTISELECT",
+                                "facetInfo": [
+                                    {
+                                        "label": "Less than Rs. 300",
+                                        "id": "costForTwofacetquery0",
+                                        "analytics": {},
+                                        "openFilter": true
+                                    }
+                                ],
+                                "viewType": "VIEW_TYPE_HALF_CARD",
+                                "subLabel": "Filterby",
+                                "openFilter": true
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "widgetPadding": {
+                                "left": 16,
+                                "right": 16
+                            },
+                            "scrollBar": {},
+                            "widgetTheme": {
+                                "defaultMode": {
+                                    "backgroundColour": "#FFFFFF",
+                                    "theme": "THEME_TYPE_LIGHT"
+                                },
+                                "darkMode": {
+                                    "backgroundColour": "#1B3028",
+                                    "theme": "THEME_TYPE_DARK"
+                                }
+                            }
+                        },
+                        "id": "restaurantCountWidget",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                                "text": "Restaurants to explore",
+                                "headerStyling": {
+                                    "textSize": 15,
+                                    "textColor": "text_color_highest_emphasis",
+                                    "textFontName": "FONT_NAME_HEADER_H5",
+                                    "maxLines": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "503003",
+                            "name": "ZAZA Mughal Biryani",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/17/d26bdfca-3b50-41ea-87e1-e7f9a6b0581d_503003.jpg",
+                            "locality": "Lakshmi Nagar Road",
+                            "areaName": "Central Bangalore",
+                            "costForTwo": "₹250 for two",
+                            "cuisines": [
+                                "Biryani",
+                                "North Indian",
+                                "Awadhi"
+                            ],
+                            "avgRating": 4.4,
+                            "parentId": "22473",
+                            "avgRatingString": "4.4",
+                            "totalRatingsString": "594",
+                            "sla": {
+                                "deliveryTime": 15,
+                                "lastMileTravel": 2.6,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "10-20 mins",
+                                "lastMileTravelString": "2.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-04-16 02:00:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "textExtendedBadges": [
+                                    {
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available",
+                                        "fontColor": "#7E808C"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {},
+                                    "textExtendedBadges": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "shortDescription": "options available",
+                                                    "fontColor": "#7E808C",
+                                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                                    "description": ""
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "textBased": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "ITEMS",
+                                "subHeader": "AT ₹145",
+                                "footerText": "3 DEALS LEFT",
+                                "secondaryHeaderType": "SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=503003&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "503000",
+                            "name": "Itminaan Matka Biryani - Slow Cooked",
+                            "cloudinaryImageId": "e165225d26130103fecf1c40f5dc3669",
+                            "locality": "Lakshmi Road",
+                            "areaName": "Central Bangalore",
+                            "costForTwo": "₹250 for two",
+                            "cuisines": [
+                                "Biryani",
+                                "North Indian",
+                                "Mughlai"
+                            ],
+                            "avgRating": 4.5,
+                            "parentId": "107673",
+                            "avgRatingString": "4.5",
+                            "totalRatingsString": "89",
+                            "sla": {
+                                "deliveryTime": 25,
+                                "lastMileTravel": 2.6,
+                                "serviceability": "SERVICEABLE",
+                                "slaString": "20-30 mins",
+                                "lastMileTravelString": "2.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2025-04-16 02:00:00",
+                                "opened": true
+                            },
+                            "badges": {
+                                "textExtendedBadges": [
+                                    {
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available",
+                                        "fontColor": "#7E808C"
+                                    }
+                                ]
+                            },
+                            "isOpen": true,
+                            "type": "F",
+                            "badgesV2": {
+                                "entityBadges": {
+                                    "imageBased": {},
+                                    "textExtendedBadges": {
+                                        "badgeObject": [
+                                            {
+                                                "attributes": {
+                                                    "description": "",
+                                                    "shortDescription": "options available",
+                                                    "fontColor": "#7E808C",
+                                                    "iconId": "guiltfree/GF_Logo_android_3x"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "textBased": {}
+                                }
+                            },
+                            "aggregatedDiscountInfoV3": {
+                                "header": "ITEMS",
+                                "subHeader": "AT ₹199",
+                                "footerText": "5 DEALS LEFT",
+                                "secondaryHeaderType": "SECONDARY_HEADER_TYPE_USAGE_LIMIT_OFFER"
+                            },
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "differentiatedUi": {
+                                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                                "differentiatedUiMediaDetails": {
+                                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                                    "lottie": {},
+                                    "video": {}
+                                }
+                            },
+                            "reviewsSummary": {},
+                            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                            "restaurantOfferPresentationInfo": {},
+                            "externalRatings": {
+                                "aggregatedRating": {
+                                    "rating": "--"
+                                }
+                            },
+                            "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                        },
+                        "analytics": {},
+                        "cta": {
+                            "link": "swiggy://menu?restaurant_id=503000&source=collection&query=Biryani",
+                            "text": "RESTAURANT_MENU",
+                            "type": "DEEPLINK"
+                        },
+                        "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                        "sectionId": "MENU_RETURN_FOOD"
+                    }
+                }
+            }
+        ],
+        "firstOffsetRequest": true,
+        "nextFetch": 3
+    },
+    "tid": "144d4026-8f8b-43a3-9ec1-6a499a1da8f0",
+    "sid": "k1u10d6a-e95f-480e-b205-b134588d09ec",
+    "deviceId": "991c31a2-c32a-ced1-6e6f-f0cea7b39792",
+    "csrfToken": "L1Hpd24NRDly-Oaem7r6pLM6QKpfL5K7hKSH0i64"
+}

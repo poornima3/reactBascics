@@ -1,0 +1,93 @@
+import ResturantCard, { withPromotedLabel } from "./ResturantCard";
+import resList from "../utils/mockData";
+import { useState, useEffect, useContext } from "react";
+import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom"
+import useOnlineStatus from '../utils/useOnlineStatus';
+import UserContext from "../utils/UserContext";
+
+const Body = () => {  
+
+  const [listofResturants, setListofResturants] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [filteredResturant, setFilteredResturant] = useState([]);
+
+  const RestaurantCardPromoted = withPromotedLabel(ResturantCard);
+
+  const { loggedInUser, setUserName } = useContext(UserContext);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&page_type=null");
+    const json = await data.json();
+
+    // console.log('json data', json?.data?.cards);
+    setListofResturants(json?.data?.cards);
+    setFilteredResturant(json?.data?.cards)
+  }
+
+  // Conditional Rendering 
+  // if (listofResturants.length === 0) {
+  //   return <Shimmer />
+  // }
+  // console.log('_______________', filteredResturant)
+
+  const onlineStatus = useOnlineStatus();
+
+  if(!onlineStatus) return <h1>Looks like you're offline!! Please check your internet connection</h1>
+
+  return listofResturants.length === 0 ? (<Shimmer />) : (
+    <div className='body'>
+      <div className='filter flex'>
+        <div className="search m-4 p-4">
+          <input data-testid="searchInput" type="text" className="search-box border border-solid border-black" value={searchText} onChange={(e) => setSearchText(e.target.value)}/>
+          <button className="px-4 py-2 bg-green-100 m-4 rounded-lg"
+            // Filter the restutant cards and update the UI
+            onClick={() => {
+              listofResturants.map((res) => console.log(res.card?.card?.info?.name))
+              const filteredResturant = listofResturants.filter((res) => res.card?.card?.info?.name.toLowerCase().includes(searchText.toLowerCase()));
+              setFilteredResturant(filteredResturant);
+            }}
+          >
+            Search
+          </button>
+        </div>
+        <div className="search m-4 p-4 flex items-center">
+          <button
+            className="px-4 py-2 bg-gray-100 rounded-lg"
+            onClick={() => {
+              const filteredList = listofResturants.filter((res) => res.info.avgRating > 5);
+              setListofResturants(filteredList);
+              console.log('list of restaurants', listofResturants)
+            }} >
+            Top Rated Restaurants
+          </button>
+
+        </div>
+        <div className="search m-4 p-4 flex items-center">
+          <label className="p-2 ">UserName: </label>
+          <input type="text" className="search-box border border-solid border-black" value={loggedInUser} onChange={(e) => setUserName(e.target.value)} />
+        </div>
+      
+      </div>
+      <div className='res-container flex flex-wrap'>
+        {
+          filteredResturant.map(resturant => {
+            return resturant?.card?.card?.info !== undefined && <Link key={resturant?.card?.card?.info?.id} to={"/restaurants/" + resturant?.card?.card?.info?.id}>
+              {/* if the resturant is promoted then add a promoted label to it */
+                resturant?.card?.card?.info?.promoted ? (<RestaurantCardPromoted resData={resturant} />)
+                  :
+                  (<ResturantCard resData={resturant} />)
+              }
+            </Link>
+          })
+        }
+      </div>
+    </div>
+  )
+}
+
+export default Body;

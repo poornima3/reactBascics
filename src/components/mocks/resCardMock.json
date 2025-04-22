@@ -1,0 +1,90 @@
+{
+    "card": {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+                "id": "102334",
+                "name": "Dindigul Thalappakatti",
+                "cloudinaryImageId": "ogidjgqgh5w4otvuiipj",
+                "locality": "Mg Road",
+                "areaName": "Indiranagar",
+                "costForTwo": "₹650 for two",
+                "cuisines": [
+                    "Biryani",
+                    "Barbecue",
+                    "South Indian",
+                    "Chinese",
+                    "North Indian"
+                ],
+                "avgRating": 4.4,
+                "parentId": "332",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "9.1K+",
+                "promoted": true,
+                "adTrackingId": "cid=27670874~p=4~adgrpid=27670874#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=102334~plpr=COLLECTION~eid=23ea82cd-6a6f-4432-b0ad-b8d8f021e6b9~srvts=1744719215080~collid=83639",
+                "sla": {
+                    "deliveryTime": 43,
+                    "lastMileTravel": 3,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "40-45 mins",
+                    "lastMileTravelString": "3.0 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-04-15 23:59:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textExtendedBadges": {},
+                        "textBased": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "ITEMS",
+                    "subHeader": "AT ₹179"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {},
+                    "commsStyling": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "27670874"
+            },
+            "analytics": {},
+            "cta": {
+                "link": "swiggy://menu?restaurant_id=102334&source=collection&query=Biryani",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+        },
+        "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+        }
+    }
+}
